@@ -29,7 +29,7 @@
         display: block;
     }
 
-    thead h1 {
+    thead th {
         display: none;
     }
 
@@ -43,21 +43,21 @@
     td {
         border: 1px dotted gray;
         color: rgb(11, 12, 145);
+        padding-left: 5%;
         position: relative;
-        padding-left: 40%;
         min-height: 40px;
     }
 
-    tr:nth-of-type(odd) {
+    tr:nth-child(odd) {
         background-color: rgb(255, 235, 178);
         border: 2px solid gray;
     }
 
-    td::before {
+    td:before {
         content: " ("attr(data-date) ")";
         position: absolute(0, 0);
         width: 40%;
-        padding: 5px;
+        padding: 40px;
     }
 
 }
@@ -97,9 +97,22 @@
         color: rgb(11, 12, 145);
     }
 
-    td [data-date=_Feb] {
+    td[data-date~="Feb"] {
         background: rgba(232, 214, 148, 0.6);
         box-shadow: gray inset 0px 0px 20px;
+    }
+
+    table caption {
+        text-align: top;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+    }
+
+    thead th {
+        background-color: rgb(154, 64, 3);
+        color: white;
     }
 
 }
