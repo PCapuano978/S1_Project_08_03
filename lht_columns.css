@@ -25,6 +25,12 @@ article {
     orphans: 2;
 }
 
+/* For the article style, columns have been added and are supported by one pixel vertical lines with a shade of brown. 
+The column specifics include a width of two hundred and twenty pixels; also allowing for two widows/orphans to break up
+the paragraphs as well. */
+
 article h1 {
     column-span: all;
 }
+
+/* The main heading is set to span itself across all the columns despite the past style rules. */

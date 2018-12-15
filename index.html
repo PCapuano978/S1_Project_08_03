@@ -74,14 +74,23 @@
         </p>
     </article>
 
+
+    <!-- Our edits start here with the addition of a table after the article element. -->
+
     <table id="calendar">
         <caption>February 2018 Calendar</caption>
+
+        <!-- The table element starts off by having an ID of "calender" to be selected individually in the stylesheets
+        present. A caption is also added to title the table above the contents as well. -->
 
         <column>
             <col class="weekdays" colspan="5">
             </col>
             <col class="weekends" colspan="2">
             </col>
+
+            <!-- Both of these "col" sectioning elements define classes, of both the five columns of weekdays and the two
+            columns to be the weekends' days. -->
 
             <thead>
                 <tr>
@@ -95,17 +104,74 @@
                 </tr>
             </thead>
 
+            <!-- Our table head or "thead" element labels the columns' days in a similar function to the table caption; 
+            this time done with three letter abrivations in order from "Saturday" to "Sunday". -->
+
             <tbody>
 
+                <!-- Starting here is our table body, or "tbody" that will contain the main parts of our table, and all
+                the declarations to be involved with it. -->
+
                 <tr>
+
+                    <!-- We start off our table body, by creating a table row that will be five containing each week of
+                    Febuary's scheduel for The Lyman Hall Theater; also including the tranisitong days from January and
+                    into March as well. -->
+
                     <td data-date="Sun, Jan 28, 2018">
+
+                        <!-- We have our first table cell here by the type of a data cell and it comes along with an
+                        attribute that will be starting a trend for every other data cell, or days represented in this
+                        calender. 
+                        
+                        That being that it will start off with a three letter abrivation for its day (in this
+                        case, "Sun" for Sunday), then it includes a date with both a three letter abbrivation for the
+                        month and the day number (here being "Jan" for January and "28" for the twenty eighth). Laslty,
+                        we have the year as well (conviently) being two thousand and eighten, which will naturally apply 
+                        for all dates here. 
+
+                        Each part of the attribute is put in for targetting in the stylesheets that not only helps with 
+                        targetting specific dates, but also will add in content) (spoiler warning: it's for mobile users)
+                         -->
+
                         <h1>28</h1>
+
+                        <!-- In our data cell's heading element, it will show the day number of the particular number,
+                        and only that. This case being the twenty eighth, and that showing up in this data cell's block. -->
+
                         <dl>
+
+                            <!-- A discription/definition  list that every data cell will be having is also put in here. 
+                            The "dl" tags start and end the section element, while "dt" is used for the description 
+                            title with higher presence, and "dd"s are used for each list's items. -->
+
                             <dt>Caron Quartet</dt>
                             <dd>1 PM</dd>
                             <dd>$12</dd>
+
+                            <!-- Here we finally have information regarding this date for Lyman Hall Theater's schedule.
+                            Every description list's information is also desplayed very similarly across all data cells
+                            and goes as follows.
+                        
+                            It starts with its description title giving out what exact will be occuring on this day; for
+                            this cell being the "Caron Quartet". Our first list item contains what time this is
+                            scheduled to happen; being one o' clock PM in this case. Finally, our second list item has
+                            the pricing needed to participate. You know the drill and it's twelve dollars in cost. 
+                        
+                            All of this information of the event, time, and pricing are all included within the 
+                            "lht_schedule.txt" document labeled with each date the info shall be placed in. This finally
+                            leaves the viewers knowing here form this website that the twenty eighth of Juanary has the
+                            "Caron Quartet" at one o' clock PM, and will be twelve dollars in attending cost.-->
+
                         </dl>
+
                     </td>
+
+                    <!-- This structure for our table having its declaration with a specified date attribute following
+                    with it's date number as a heading, and a description including the event name, time, and pricing
+                    will be reaping in our document with the five rows, or weeks and seven columns each for every day
+                    for those weeks. That's thirty five data cells we've had to implement in!  -->
+
                     <td data-date="Mon, Jan 29, 2018">
                         <h1>29</h1>
                         <dl>
@@ -116,6 +182,11 @@
                     </td>
                     <td data-date="Tue, Jan 30, 2018">
                         <h1>30</h1>
+
+                        <!-- And here we have our first exception as the second type of data cell we'll be using. For any 
+                    day that is not documentment to have anything schedueled, only the date number in the heading tag
+                    is included with the decription/definition list still having its respective detailing attribute.   -->
+
                     </td>
                     <td data-date="Wed, Jan 31, 2018">
                         <h1>31</h1>
@@ -330,6 +401,12 @@
         </column>
 
     </table>
+
+
+    <!-- And just like that, we are finally done with our main table elements with every single table cell. the section
+        closing tags naturally are put in to close each of the parts out table has declared at first.
+     -->
+
 
     <footer>
         <nav>

@@ -20,6 +20,9 @@
 
 @media only screen and (max-width: 640px) {
 
+    /* We start off our responsive design here in "lht_tables.css" by effecting how mobile users will see our website by
+    defining a media query set only for displays with a maximum screen width of six hundred and forty pixels. */
+
     table,
     tbody,
     tr,
@@ -29,9 +32,15 @@
         display: block;
     }
 
+    /* Our first style rule within shall be all table, table body, table row, data cells, heading cells, and captions
+    to be set to a display of block with all of elements added to the table. */
+
     thead th {
         display: none;
     }
+
+    /* Table heading cells within all table heads (too many heads...) are set here to a display of "none", meaning
+    they are intented to not show up at all for mobile devices, for intuitive site veiwing.   */
 
     table caption {
         color: white;
@@ -39,6 +48,10 @@
         font-size: 1.5em;
         line-height: 2em;
     }
+
+    /* Captions within tables are made white in text color with their size being one point five ems, with gray 
+    backgrounds that will also being having a line height of two em. 
+    */
 
     td {
         border: 1px dotted gray;
@@ -48,10 +61,17 @@
         min-height: 40px;
     }
 
+    /* Table data cells are given a dotted, one pixel, gray border to start with. Accompaning that will be text with a
+    blue RGB shade, padding to the left of five percent inherrited, postioning of this element to be relative, and
+    finally, a minumum height of forty pixels. */
+
     tr:nth-child(odd) {
         background-color: rgb(255, 235, 178);
         border: 2px solid gray;
     }
+
+    /* With the help of this psuedo style, we target every other table row to have a different background color and
+    border of two pixles, solid, and gray in coloring. */
 
     td:before {
         content: " ("attr(data-date) ")";
@@ -60,12 +80,20 @@
         padding: 40px;
     }
 
+    /* Before all table data cells, like this psuedo style suggests, we have content generated for our created data cell
+    attributes for better clarity on a smaller screen (spoilers are no over). Postion is also set to absolute with a
+    location at "0" and "0" in "X,Y" coordinates, widht is made to be forty percent inherrited of element size, and
+    padding all around is forty pixels.  */
+
 }
 
 /* =============================================
    Tablet and Desktop Styles: greater than 640px
    =============================================
 */
+
+/* Desktop/Tablet styles now start here. They apply to monitors now with higher amounts than six hundred and fortyy
+pixels in screen width.  */
 
 @media only screen and (min-width: 641px) {
 
@@ -81,6 +109,13 @@
         width: 85%;
     }
 
+    /* Starting off with Desktop/Tablet styles, the table background will have an image with the URL of "lht_photo1.png" 
+    as another document within this folder. The position of this background image shall be put in the bottom and right
+    portion of the page, and also will be of forty percent size with no reapted tiling wanted. Additonally, a double
+    lined border with an RGB value specified above is also given with it also being set to collapse. Finally, margins
+    are set to twenty pixels on the side with it being automatically set on top and bottom, table layout is fixed to
+    this element, and width is eighty five percent the element's amount.  */
+
     th,
     td {
         border: 1px solid gray;
@@ -92,15 +127,26 @@
         word-wrap: normal;
     }
 
+    /* Both table head cells and table data cells are given here a one pixel solid gray border, a font size of point
+    eighty five em, font weight set to the normal amount, padding on all sides to five pixels in length, text centered
+    to the top of their parent elements, width at a oddly specifically demmanded fourteen point twenty eight hundredths
+    in percent (seriously Cengage, what the hay?), and finally, word wraps are declared to occur normally. */
+
     td {
         background-color: rgba(171, 171, 171, 0.6);
         color: rgb(11, 12, 145);
     }
 
+    /* Table data celss here are idividually set to have a background color of the one specified, alongside a
+    transparency effected added in. Text color is also blue (but you probably already saw this coming). */
+
     td[data-date~="Feb"] {
         background: rgba(232, 214, 148, 0.6);
         box-shadow: gray inset 0px 0px 20px;
     }
+
+    /* Table data cells that have an attribute that contains the text "Feb" in it (told you this was going to be used)
+    will have a different background color in additon to a gray, inset box shadow for each data cell's part. */
 
     table caption {
         text-align: top;
@@ -110,9 +156,24 @@
         letter-spacing: 3px;
     }
 
+    /* The one and only table caption is further demmanded to be put tot the top of its parent content, also be centered
+    at that, have it pushed up with the bottom padding added with ten pixels, the font-size adjusted to one point two
+    em, and letter spacing each with three pixels. */
+
     thead th {
         background-color: rgb(154, 64, 3);
         color: white;
     }
+
+    /* The table head cell in the table heading (this again...) will be our final style rule (at least the one I'm
+    adding in) will be given a brown shade for a background color and text color that will be white. */
+
+
+
+
+
+    
+    /* I'll honestly be shocked if you read these, but adding my own flavor *does* make them more fun for me in the end,
+    and that's why I choose to do coding in the first place (and so I can live outside my parents' home). */
 
 }
